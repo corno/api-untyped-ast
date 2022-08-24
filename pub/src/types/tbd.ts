@@ -6,21 +6,3 @@ export type TUntypedNode<NodeImplementationDetails> = {
     readonly "implementationDetails": NodeImplementationDetails
     readonly "children": pt.Array<TUntypedNode<NodeImplementationDetails>>
 }
-
-export type File<NodeImplementationDetails>  = {
-    fullPath: string
-    root: TUntypedNode<NodeImplementationDetails>
-}
-
-export type Project<NodeImplementationDetails> = {
-    files: pt.Dictionary<File<NodeImplementationDetails>>
-}
-
-export type Location = {
-    line: number
-    column: number
-}
-
-export type GetLocation<NodeImplementationDetails> = (
-    $: NodeImplementationDetails
-) => Location
