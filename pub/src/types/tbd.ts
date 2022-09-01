@@ -1,8 +1,11 @@
 import * as pt from "pareto-core-types"
 
-export type TUntypedNode<NodeImplementationDetails> = {
+export type TUntypedNode = {
     readonly "kindName": string
     readonly "value": string
-    readonly "implementationDetails": NodeImplementationDetails
-    readonly "children": pt.Array<TUntypedNode<NodeImplementationDetails>>
+    readonly "location": {
+        line: number
+        column: number
+    }
+    readonly "children": pt.Array<TUntypedNode>
 }
