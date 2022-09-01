@@ -5,11 +5,13 @@ export type TLocation = {
     readonly "column": number
 }
 
+export type TDetails = {
+    readonly "location": TLocation
+}
+
 export type TUntypedNode = {
     readonly "kindName": string
     readonly "value": string
-    readonly "details": {
-        readonly "location": TLocation
-    }
+    readonly "details": TDetails
     readonly "children": pt.Array<TUntypedNode>
 }
