@@ -1,1 +1,1 @@
-export * from "../types/tbd"
+export * from "./tbd"
