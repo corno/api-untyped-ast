@@ -12,6 +12,10 @@ export type TDetails = {
 export type TUntypedNode = {
     readonly "kindName": string
     readonly "value": string
+    readonly "unwrapped value": {
+        readonly "wrapper": string
+        readonly "value": string
+    }
     readonly "details": TDetails
     readonly "children": pt.Array<TUntypedNode>
 }
