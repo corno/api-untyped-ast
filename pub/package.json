@@ -11,8 +11,8 @@
     "data"
   ],
   "dependencies": {
-    "pareto-core-types": "^0.2.0"
+    "pareto-core-types": "^0.5.0"
   },
   "interface-fingerprint": "eca4e6fe7d0593c5fae7814e9f76c5df85aaed6b",
-  "content-fingerprint": "09794375729af15e59fcc219f847b843af71d7cf"
+  "content-fingerprint": "8ef457a40e3cc88d4e45c5d9e83dda72686cd9af"
 }
